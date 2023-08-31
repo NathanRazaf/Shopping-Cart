@@ -1,0 +1,43 @@
+.argument {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding: 50px;
+    width: 70%;
+    margin: 30px;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.argument h2,p,span {
+    position: relative;
+    z-index: 1;
+}
+.argument h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    border-bottom: 2px solid white;
+}
+.argument.one {
+    background: url('../assets/victor-wooten.webp') no-repeat center top;
+    background-size: cover;
+}
+.argument.two {
+    background: url('../assets/michael-jackson.webp') no-repeat center center;
+    background-size: cover;
+    align-self: flex-end;
+}
+.argument.three {
+    background: url('../assets/elvis-presley.webp') no-repeat center top;
+    background-size: cover;
+}
+.quote {
+    margin-top: 100px;
+    font-style: italic;
+    align-self: center;
+}
+.quote-author {
+    font-style: italic;
+    align-self: flex-end;
+    margin-right: 100px;
+}
