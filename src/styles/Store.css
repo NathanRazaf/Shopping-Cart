@@ -1,0 +1,54 @@
+.store {
+    display: flex;
+    background: gray;
+}
+.store .sidebar {
+    width: 17%;
+    background: #ffc176;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    max-height: 100vh; /* 100% of the viewport height */
+    overflow-y: auto;
+
+}
+.store .sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.store .sidebar h2 {
+    border-bottom: 2px solid black;
+}
+.store .sidebar button {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #ff8c00;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+}
+.store .sidebar button:hover,.store .sidebar button.highlighted {
+    color: #ff8c00;
+    background: black;
+}
+.store .sidebar button:active {
+    transform: translateX(10px);
+}
+
+.store .products {
+    padding: 20px;
+    width: 83%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.store a {
+    text-decoration: none;
+    color: black;
+}

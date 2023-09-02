@@ -4,6 +4,7 @@ import Home from "./Home.jsx";
 import Store from "./Store.jsx";
 import AboutUs from "./AboutUs.jsx";
 import ErrorPage from "../components/ErrorPage.jsx";
+import ProductDetails from "./ProductDetails.jsx";
 
 const Router = () => {
 
@@ -14,7 +15,12 @@ const Router = () => {
             errorElement: <ErrorPage />,
             children: [
                 {index: true, element: <Home />},
-                {path: "store", element: <Store />},
+                {path: "store", element: <Store />,
+                    children: [
+                        {path:":category", element: <Store />},
+                    ]
+                },
+                {path:"store/:category/:id", element: <ProductDetails />},
                 {path: "about", element: <AboutUs />}
             ]
         },

@@ -1,3 +1,9 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #fca974, #754409);
+}
+
 .argument {
     position: relative;
     display: flex;
@@ -41,3 +47,4 @@
     align-self: flex-end;
     margin-right: 100px;
 }
+

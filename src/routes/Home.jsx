@@ -1,7 +1,7 @@
 import '../styles/Home.css'
 function Home() {
     return (
-        <>
+        <div className='home'>
             <div className='argument one'>
                 <h2>Why buy from us?</h2>
                 <p>
@@ -15,7 +15,7 @@ function Home() {
                 <h2>Can we trust your products?</h2>
                 <p>
                     Our products are regularly verified by professionals. In particular, Michael Jackson can testify for the quality of our
-                    guitars
+                    guitars.
                 </p>
                 <span className='quote'>"Bro I don't even play guitar"</span>
                 <span className='quote-author'>Michael Jackson</span>
@@ -29,7 +29,7 @@ function Home() {
                 <span className='quote'>"Nah bruh even Fender makes better prices than you"</span>
                 <span className='quote-author'>Elvis Presley</span>
             </div>
-        </>
+        </div>
     )
 }
 

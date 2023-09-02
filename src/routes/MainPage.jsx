@@ -14,9 +14,7 @@ const MainPage = () => {
                 <Link to="/store">Shopping</Link>
                 <Link to="/about">About Us</Link>
             </nav>
-            <main>
-                <Outlet/>
-            </main>
+            <Outlet/>
             <footer>
                 <Icon
                     path={mdiMusicCircle}

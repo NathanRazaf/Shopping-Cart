@@ -58,6 +58,10 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: #d26f2a;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    border-bottom: 2px solid black;
 }
 
 nav a {
@@ -71,9 +75,22 @@ nav a:hover,.main-page footer a:hover {
     text-underline-offset: 3px;
 }
 
-.main-page main {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(to bottom, #fca974, #754409);
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #9d6b05; /* Background color of the scrollbar */
 }
+::-webkit-scrollbar-thumb {
+    background-color: #ea8f51; /* Color of the thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+    border: 2px solid transparent; /* Border color of the thumb */
+}
+::-webkit-scrollbar-track {
+    border-radius: 6px; /* Makes the track corners rounded */
+    background-color: #9d5105; /* Color of the track */
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #d37501; /* Change thumb color when hovering */
+}
+
+
 
