@@ -7,6 +7,26 @@
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+.cart-button {
+    position: fixed;
+    z-index: 999;
+    top: 20px;
+    right: 10px;
+    width: fit-content;
+    margin: 0 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background: #ff8c00;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+}
+.cart-button:hover {
+    transform: scale(1.1);
+    background: black;
+}
+
 .main-page header {
     position: relative;
     width: 100%;
@@ -28,6 +48,9 @@
     left: 0;
     background: rgba(0, 0, 0, 0.5);  /* This is a semi-transparent black. */
     pointer-events: none;  /* This ensures the overlay doesn't interfere with any interactive elements in the header. */
+}
+.main-page header a {
+    text-decoration: none;
 }
 .main-page footer {
     display: flex;
@@ -61,7 +84,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 9;
-    border-bottom: 2px solid black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 nav a {

@@ -8,7 +8,7 @@
     width: 100%;
     background-color: #bec9cc;
 }
-.product-details h1 {
+.product-details .product-name {
     width: 80%;
     margin: 20px 0;
     text-align: center;

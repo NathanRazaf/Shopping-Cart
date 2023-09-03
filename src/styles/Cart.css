@@ -1,0 +1,13 @@
+.cart h1 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+.cart {
+    background-color: #d1d7d7;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

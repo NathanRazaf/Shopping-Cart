@@ -1,9 +1,11 @@
 import { useParams } from "react-router-dom";
+import { useCart} from "./CartContext.jsx";
 import { useEffect, useState } from "react";
 import '../styles/ProductDetails.css'
 
 const ProductDetails = () => {
     const { id } = useParams();
+    const { addToCart } = useCart();
     const [product, setProduct] = useState(null);
     const [loading, setLoading] = useState(true); // Initialize loading state
 
@@ -25,7 +27,7 @@ const ProductDetails = () => {
         <div className='product-details'>
             {product &&
                 <>
-                    <h1>{product.name}</h1>
+                    <h1 className='product-name'>{product.name}</h1>
                     <div className='product-details-bottom'>
                         <img src={product.image} alt={product.name} />
                         <div className='product-details-right'>
@@ -34,7 +36,7 @@ const ProductDetails = () => {
                             <p className={'product-description'}>I'm sorry, there's no description, you're gonna have to just refer to the image (we're a quality store I promise)</p>
                             <p className={'product-price'}>Price: ${product.price}</p>
                             <p className={product.inStock ? 'in-stock' : 'out-of-stock'}>{product.inStock ? 'This product is still in stock!' : 'This product is out of stock!'}</p>
-                            <button className={'add-to-cart'}>Add to cart</button>
+                            <button className={'add-to-cart'} onClick={() => addToCart(product)}>Add to cart</button>
                         </div>
                     </div>
                 </>

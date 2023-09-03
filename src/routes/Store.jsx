@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import {useEffect, useState} from "react";
 import StoreItem from "../components/StoreItem";
-import '../styles/Store.css'
+import '../styles/Store.css';
 
 const Store = () => {
     const [allProducts, setAllProducts] = useState([]);
     const [productsDisplayed, setProductsDisplayed] = useState([]);
     const [filter, setFilter] = useState(null); // e.g., "electric-guitars"
     const [sortOrder, setSortOrder] = useState(null); // e.g., "alphabetical"
-    const [highlightedButton, setHighlightedButton] = useState(null);
+    const [highlightedButton, setHighlightedButton] = useState('all');
     const [loading, setLoading] = useState(true); // Initialize loading state
 
     useEffect(() => {
