@@ -66,4 +66,12 @@
     background: #ff8c00;
     cursor: pointer;
     font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+}
+.add-to-cart:hover {
+    background-color: #d26f2a;
+    transform: scale(1.1);
+}
+.add-to-cart:active {
+    transform: scale(1.05);
 }
