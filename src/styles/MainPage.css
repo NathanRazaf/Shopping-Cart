@@ -69,9 +69,11 @@
 
 .main-page h1 {
     z-index: 1;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #fff;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 30px;
 }
 
 nav {
@@ -113,6 +115,29 @@ nav a:hover,.main-page footer a:hover {
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: #d37501; /* Change thumb color when hovering */
+}
+
+@media (max-width: 1200px) {
+    .main-page header {
+        height: 150px;
+    }
+    .main-page h1 {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        height: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-page header {
+        height: 100px;
+    }
+    .main-page h1 {
+        font-size: 1.5rem;
+    }
+
 }
 
 

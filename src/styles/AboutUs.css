@@ -1,0 +1,41 @@
+.AboutUs {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #e2dbdb;
+}
+
+.AboutUs h1 {
+    font-size: 50px;
+    align-self: center;
+    color: red;
+    text-shadow: none;
+}
+
+.AboutUs p {
+    align-self: center;
+    text-align: center;
+    font-size: large;
+    width: 90%;
+    color: rgb(143, 81, 19);
+}
+
+.AboutUs .contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px;
+    gap: 10px;
+    text-decoration: underline;
+
+}
+
+.AboutUs img {
+    width: 60%;
+    align-self: center;
+}

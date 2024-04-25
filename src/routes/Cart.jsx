@@ -22,6 +22,7 @@ function Cart() {
     }
     const [aggregatedCartItems, setAggregatedCartItems] = useState([]);
     const [totalPrice, setTotalPrice] = useState(0);
+
     useEffect(() => {
         setAggregatedCartItems(aggregateCartItems(cartItems));
         setTotalPrice(Math.round(cartItems.reduce((total, item) => total + item.price, 0) * 100) / 100);

@@ -48,3 +48,9 @@
     margin-right: 100px;
 }
 
+@media (max-width: 600px) {
+    .argument.one, .argument.two, .argument.three {
+        align-self: center;
+        width: 60%;
+    }
+}

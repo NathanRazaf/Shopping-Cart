@@ -1,6 +1,6 @@
 .store {
     display: flex;
-    background: gray;
+    background: rgb(128, 128, 128);
 }
 .store .sidebar {
     width: 17%;
@@ -41,7 +41,7 @@
 
 .store .products {
     padding: 20px;
-    width: 83%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
